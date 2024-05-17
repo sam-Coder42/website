@@ -340,6 +340,26 @@ body {
     
 }
 
+.navbar-nav {
+    position: relative;
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;  
+}
+
+.navbar-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height : 100%;
+    background: #010430;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.7s;
+}
+
+
 /* key animations */
 @keyframes showRight {
     100% {
